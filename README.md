@@ -150,7 +150,7 @@ The `jobconfig.json` file should contain an array of task configurations. Exampl
 
 ## Troubleshooting
 
-- If a job fails, check the `jobs_run_stats` table for error messages.
-- Use the `SYSTEM$GET_SERVICE_LOGS` function to retrieve detailed logs for failed service jobs.
+- If a job fails, check the `jobs_run_stats` table for error messages or completion status per execution.
+- Use the `task_logging_stats`  to retrieve failed logs for task failures if anyor to get the durations metrics for all the tasks for every execution.
 
 For more detailed information on each component, refer to the inline comments in the SQL and Python code.
