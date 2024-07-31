@@ -1,0 +1,50 @@
+[{
+    "task_name":"t_myjob_1",
+    "compute_pool_name":"PR_STD_POOL_XS",
+    "job_name":"myjob_1",
+    "table_name":"results_1",
+    "retry_count":0,
+    "after_task_name":"root_task"
+   },
+   {
+       "task_name":"t_myjob_2",
+       "compute_pool_name":"PR_STD_POOL_S",
+       "job_name":"myjob_2",
+       "table_name":"results_2",
+       "retry_count":0,
+       "after_task_name":"root_task"
+   },
+   {
+       "task_name":"t_myjob_3",
+       "compute_pool_name":"PR_STD_POOL_S",
+       "job_name":"myjob_3",
+       "table_name":"results_3",
+       "retry_count":2,
+       "after_task_name":"t_myjob_2"
+   },
+   {
+    "task_name":"t_myjob_4",
+    "compute_pool_name":"PR_STD_POOL_XS",
+    "job_name":"myjob_4",
+    "table_name":"results_4",
+    "retry_count":1,
+    "after_task_name":"t_myjob_2"
+},
+   {
+    "task_name":"t_myjob_5",
+    "compute_pool_name":"PR_STD_POOL_XS",
+    "job_name":"myjob_5",
+    "table_name":"results_5",
+    "retry_count":0,
+    "after_task_name":"t_myjob_1"
+},
+{
+ "task_name":"t_myjob_6",
+ "compute_pool_name":"PR_STD_POOL_S",
+ "job_name":"myjob_6",
+ "table_name":"results_6",
+ "retry_count":0,
+ "after_task_name":"t_myjob_3,t_myjob_4,t_myjob_5"
+}
+
+]
