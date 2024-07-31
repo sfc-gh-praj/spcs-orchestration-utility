@@ -1,8 +1,6 @@
 # spcs-orchestration-workflow-utility
 
-# SPCS Job Service and Task DAG
-
-This solution implements a SPCS job service workflow using task DAG (Directed Acyclic Graph) in Snowflake, using SQL and Python stored procedures. It allows for the creation and management of compute pools, execution of containerized jobs, and logging of task statuses.
+This solution implements a SPCS job service workflow using task DAG (Directed Acyclic Graph) in Snowflake for conatinar jobs fan-out and fan-in scenario using SQL and Python stored procedures. It allows for the creation and management of compute pools, execution of containerized jobs, and logging of task statuses.
 
 
 ## Components
