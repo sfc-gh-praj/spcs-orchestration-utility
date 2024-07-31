@@ -26,13 +26,13 @@ This solution implements a SPCS job service workflow using task DAG (Directed Ac
 
 ### ExecuteJobService Procedure
 
-This stored procedure is responsible for executing a containerized job as a Snowflake service. Here's what it does:
+This stored procedure is responsible for executing a containerized job as a SPCS service job. Here's what it does:
 
 1. Accepts parameters:
    - `service_name`: Name of the service job to be created
    - `pool_name`: Name of the compute pool where the service job will run
-   - `table_name`: Name of the table where results will be stored
-   - `retry_count`: Number of retry attempts if the job fails
+   - `table_name`: Name of the table where results will be stored. Used by the container
+   - `retry_count`: Number of retry attempts if the service job fails
 
 2. Creates and executes a Snowflake job service using the provided parameters.
 
