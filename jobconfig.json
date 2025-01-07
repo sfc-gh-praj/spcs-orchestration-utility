@@ -1,6 +1,6 @@
 [{
     "task_name":"t_myjob_1",
-        "image_name":"/tutorial_db/data_schema/tutorial_repository/my_job_image:latest",
+    "image_name":"/tutorial_db/data_schema/tutorial_repository/my_job_image:latest",
     "compute_pool_name":"PR_STD_POOL_XS",
     "job_name":"myjob_1",
     "table_name":"results_1",
